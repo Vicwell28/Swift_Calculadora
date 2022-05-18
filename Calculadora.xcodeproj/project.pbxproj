@@ -13,6 +13,7 @@
 		C160CF242835A26D0030F2D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C160CF222835A26D0030F2D1 /* Main.storyboard */; };
 		C160CF262835A2720030F2D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C160CF252835A2720030F2D1 /* Assets.xcassets */; };
 		C160CF292835A2720030F2D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C160CF272835A2720030F2D1 /* LaunchScreen.storyboard */; };
+		C160CF362835A43E0030F2D1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C160CF352835A43E0030F2D1 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C160CF252835A2720030F2D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C160CF282835A2720030F2D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C160CF2A2835A2720030F2D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C160CF352835A43E0030F2D1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		C160CF1B2835A26D0030F2D1 /* Calculadora */ = {
 			isa = PBXGroup;
 			children = (
-				C160CF1C2835A26D0030F2D1 /* AppDelegate.swift */,
-				C160CF1E2835A26D0030F2D1 /* SceneDelegate.swift */,
+				C160CF322835A3E80030F2D1 /* Base */,
+				C160CF312835A3BA0030F2D1 /* Resources */,
+				C160CF302835A3A90030F2D1 /* Application */,
+			);
+			path = Calculadora;
+			sourceTree = "<group>";
+		};
+		C160CF302835A3A90030F2D1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				C160CF202835A26D0030F2D1 /* ViewController.swift */,
 				C160CF222835A26D0030F2D1 /* Main.storyboard */,
-				C160CF252835A2720030F2D1 /* Assets.xcassets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C160CF312835A3BA0030F2D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C160CF342835A4210030F2D1 /* Colors */,
+				C160CF332835A4190030F2D1 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C160CF322835A3E80030F2D1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C160CF1C2835A26D0030F2D1 /* AppDelegate.swift */,
+				C160CF1E2835A26D0030F2D1 /* SceneDelegate.swift */,
 				C160CF272835A2720030F2D1 /* LaunchScreen.storyboard */,
 				C160CF2A2835A2720030F2D1 /* Info.plist */,
 			);
-			path = Calculadora;
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C160CF332835A4190030F2D1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C160CF252835A2720030F2D1 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		C160CF342835A4210030F2D1 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				C160CF352835A43E0030F2D1 /* Colors.xcassets */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +171,7 @@
 				C160CF292835A2720030F2D1 /* LaunchScreen.storyboard in Resources */,
 				C160CF262835A2720030F2D1 /* Assets.xcassets in Resources */,
 				C160CF242835A26D0030F2D1 /* Main.storyboard in Resources */,
+				C160CF362835A43E0030F2D1 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RG9DD7MR44;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Calculadora/Info.plist;
+				INFOPLIST_FILE = Calculadora/Base/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RG9DD7MR44;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Calculadora/Info.plist;
+				INFOPLIST_FILE = Calculadora/Base/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
