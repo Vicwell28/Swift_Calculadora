@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C15FFA8E284BAE1900932B40 /* customView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15FFA8D284BAE1900932B40 /* customView.swift */; };
 		C160CF1D2835A26D0030F2D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160CF1C2835A26D0030F2D1 /* AppDelegate.swift */; };
 		C160CF1F2835A26D0030F2D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160CF1E2835A26D0030F2D1 /* SceneDelegate.swift */; };
 		C160CF212835A26D0030F2D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160CF202835A26D0030F2D1 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C15FFA8D284BAE1900932B40 /* customView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customView.swift; sourceTree = "<group>"; };
 		C160CF192835A26D0030F2D1 /* Calculadora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculadora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C160CF1C2835A26D0030F2D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C160CF1E2835A26D0030F2D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C15FFA8C284BAE0800932B40 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C15FFA8D284BAE1900932B40 /* customView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C160CF102835A26C0030F2D1 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 		C160CF312835A3BA0030F2D1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C15FFA8C284BAE0800932B40 /* Extensions */,
 				C160CF342835A4210030F2D1 /* Colors */,
 				C160CF332835A4190030F2D1 /* Images */,
 			);
@@ -183,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C160CF212835A26D0030F2D1 /* ViewController.swift in Sources */,
+				C15FFA8E284BAE1900932B40 /* customView.swift in Sources */,
 				C160CF1D2835A26D0030F2D1 /* AppDelegate.swift in Sources */,
 				C160CF1F2835A26D0030F2D1 /* SceneDelegate.swift in Sources */,
 			);

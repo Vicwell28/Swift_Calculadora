@@ -1,752 +1,613 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i8v-jN-bV0">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="YlB-st-baf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculadora" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="i8v-jN-bV0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yH5-cD-SVB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tey-md-CHP">
-                                <rect key="frame" x="187.66666666666666" y="684.33333333333337" width="93.666666666666657" height="93.666666666666629"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhq-bW-cIC">
-                                        <rect key="frame" x="5" y="5" width="83.666666666666671" height="83.666666666666671"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=".">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="jhq-bW-cIC" secondAttribute="trailing" constant="5" id="7Ps-qe-xal"/>
-                                    <constraint firstItem="jhq-bW-cIC" firstAttribute="leading" secondItem="Tey-md-CHP" secondAttribute="leading" constant="5" id="BYo-ds-Par"/>
-                                    <constraint firstItem="jhq-bW-cIC" firstAttribute="top" secondItem="Tey-md-CHP" secondAttribute="top" constant="5" id="HxE-Af-yOr"/>
-                                    <constraint firstAttribute="width" secondItem="Tey-md-CHP" secondAttribute="height" multiplier="1:1" id="QLb-Eg-wh2"/>
-                                    <constraint firstAttribute="bottom" secondItem="jhq-bW-cIC" secondAttribute="bottom" constant="5" id="dJa-HH-bbB"/>
-                                </constraints>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QD9-DH-HNC">
+                                <rect key="frame" x="0.0" y="44" width="375" height="250"/>
+                                <color key="backgroundColor" name="Verde"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7MG-Ix-FIt">
-                                <rect key="frame" x="281.33333333333331" y="684.33333333333337" width="93.666666666666686" height="93.666666666666629"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5ch-7T-2di">
+                                <rect key="frame" x="10" y="294" width="355" height="474"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zda-yd-60R">
-                                        <rect key="frame" x="5" y="5" width="83.666666666666671" height="83.666666666666671"/>
-                                        <color key="backgroundColor" name="Verde"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="=">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zle-EX-4VX">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="86.666666666666671"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MBc-lo-eCe">
+                                                <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="86.666666666666671"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="C">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="56l-qY-Nb6">
+                                                <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="86.666666666666671"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="/">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uto-Cb-cE3">
+                                                <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="86.666666666666671"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="%">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5uJ-02-Axj">
+                                                <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="86.666666666666671"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="/">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S4A-dt-lae">
+                                        <rect key="frame" x="0.0" y="96.666666666666686" width="355" height="87"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fsW-Ya-Az9">
+                                                <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="87"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="7">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LSS-Qw-Kmo">
+                                                <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="87"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="8">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GqS-sP-D6i">
+                                                <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="87"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="9">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GNe-hr-n2f">
+                                                <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="87"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="x">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DoE-Lw-a1L">
+                                        <rect key="frame" x="0.0" y="193.66666666666669" width="355" height="86.666666666666686"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BhV-yh-a7W">
+                                                <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="86.666666666666671"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="4">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WvR-eW-qe0">
+                                                <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="86.666666666666671"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="5">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EGx-NA-WQh">
+                                                <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="86.666666666666671"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="6">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vIm-mL-LbW">
+                                                <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="86.666666666666671"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="-">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xw9-eN-Ayo">
+                                        <rect key="frame" x="0.0" y="290.33333333333337" width="355" height="87"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="63K-hy-898">
+                                                <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="87"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="1">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1QG-fe-imR">
+                                                <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="87"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="2">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dWu-1O-WVr">
+                                                <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="87"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="3">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="68f-aj-GiA">
+                                                <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="87"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="+">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bBu-Ob-tgR">
+                                        <rect key="frame" x="0.0" y="387.33333333333337" width="355" height="86.666666666666686"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Wx-uB-Me2">
+                                                <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="86.666666666666671"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="0">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z1P-fS-VWB">
+                                                <rect key="frame" x="91.333333333333343" y="0.0" width="81.333333333333343" height="86.666666666666671"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="0">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WHU-pH-EyY">
+                                                <rect key="frame" x="182.66666666666666" y="0.0" width="80.999999999999972" height="86.666666666666671"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content=".">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YWb-7t-HNh">
+                                                <rect key="frame" x="273.66666666666669" y="0.0" width="81.333333333333314" height="86.666666666666671"/>
+                                                <color key="backgroundColor" name="Azul"/>
+                                                <color key="tintColor" name="white"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="=">
+                                                            <attributes>
+                                                                <font key="NSFont" size="64" name="AvenirNext-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="30"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="white"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Zda-yd-60R" secondAttribute="bottom" constant="5" id="OaB-cf-ZIX"/>
-                                    <constraint firstItem="Zda-yd-60R" firstAttribute="top" secondItem="7MG-Ix-FIt" secondAttribute="top" constant="5" id="OnL-NH-iZI"/>
-                                    <constraint firstAttribute="trailing" secondItem="Zda-yd-60R" secondAttribute="trailing" constant="5" id="mG9-0c-iqf"/>
-                                    <constraint firstAttribute="width" secondItem="7MG-Ix-FIt" secondAttribute="height" multiplier="1:1" id="nes-qi-bD5"/>
-                                    <constraint firstItem="Zda-yd-60R" firstAttribute="leading" secondItem="7MG-Ix-FIt" secondAttribute="leading" constant="5" id="tUX-so-hVi"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z8m-Ra-GBC">
-                                <rect key="frame" x="0.0" y="684.33333333333337" width="187.66666666666666" height="93.666666666666629"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7u-cV-DlE">
-                                        <rect key="frame" x="5" y="5" width="177.66666666666666" height="83.666666666666671"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="0">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="P7u-cV-DlE" secondAttribute="trailing" constant="5" id="Ffk-73-W6U"/>
-                                    <constraint firstItem="P7u-cV-DlE" firstAttribute="top" secondItem="Z8m-Ra-GBC" secondAttribute="top" constant="5" id="dn3-vh-F43"/>
-                                    <constraint firstItem="P7u-cV-DlE" firstAttribute="leading" secondItem="Z8m-Ra-GBC" secondAttribute="leading" constant="5" id="e44-Zu-wqX"/>
-                                    <constraint firstAttribute="bottom" secondItem="P7u-cV-DlE" secondAttribute="bottom" constant="5" id="yJm-ZF-UM9"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="or0-y4-98F">
-                                <rect key="frame" x="187.66666666666666" y="590.66666666666663" width="93.666666666666657" height="93.666666666666629"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pG-j3-bxb">
-                                        <rect key="frame" x="5" y="5" width="83.666666666666671" height="83.666666666666671"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="3">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstItem="0pG-j3-bxb" firstAttribute="top" secondItem="or0-y4-98F" secondAttribute="top" constant="5" id="16x-Pl-BgF"/>
-                                    <constraint firstAttribute="bottom" secondItem="0pG-j3-bxb" secondAttribute="bottom" constant="5" id="BQj-Qn-NdK"/>
-                                    <constraint firstAttribute="trailing" secondItem="0pG-j3-bxb" secondAttribute="trailing" constant="5" id="PTU-va-P44"/>
-                                    <constraint firstItem="0pG-j3-bxb" firstAttribute="leading" secondItem="or0-y4-98F" secondAttribute="leading" constant="5" id="sMT-Jh-TcF"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2a-Xd-ZPu">
-                                <rect key="frame" x="281.33333333333331" y="590.66666666666663" width="93.666666666666686" height="93.666666666666629"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BM-lC-lnF">
-                                        <rect key="frame" x="5" y="5" width="83.666666666666671" height="83.666666666666671"/>
-                                        <color key="backgroundColor" name="Verde"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="+">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="0BM-lC-lnF" secondAttribute="trailing" constant="5" id="8AX-Hh-dTc"/>
-                                    <constraint firstAttribute="bottom" secondItem="0BM-lC-lnF" secondAttribute="bottom" constant="5" id="NXl-1I-aNU"/>
-                                    <constraint firstItem="0BM-lC-lnF" firstAttribute="leading" secondItem="i2a-Xd-ZPu" secondAttribute="leading" constant="5" id="RUu-8P-jl6"/>
-                                    <constraint firstItem="0BM-lC-lnF" firstAttribute="top" secondItem="i2a-Xd-ZPu" secondAttribute="top" constant="5" id="uR2-u9-XAe"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAh-mM-X5Z">
-                                <rect key="frame" x="93.666666666666657" y="590.66666666666663" width="93.666666666666657" height="93.666666666666629"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnU-sb-B8i">
-                                        <rect key="frame" x="5" y="5" width="83.666666666666671" height="83.666666666666671"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="2">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstItem="TnU-sb-B8i" firstAttribute="top" secondItem="nAh-mM-X5Z" secondAttribute="top" constant="5" id="6vg-jw-8m0"/>
-                                    <constraint firstAttribute="bottom" secondItem="TnU-sb-B8i" secondAttribute="bottom" constant="5" id="Ii6-cg-Bp8"/>
-                                    <constraint firstItem="TnU-sb-B8i" firstAttribute="leading" secondItem="nAh-mM-X5Z" secondAttribute="leading" constant="5" id="Vaf-Iq-l35"/>
-                                    <constraint firstAttribute="trailing" secondItem="TnU-sb-B8i" secondAttribute="trailing" constant="5" id="rev-aa-YSO"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dPJ-4s-rQz">
-                                <rect key="frame" x="0.0" y="590.66666666666663" width="93.666666666666671" height="93.666666666666629"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ST-GV-qyv">
-                                        <rect key="frame" x="5" y="5" width="83.666666666666671" height="83.666666666666671"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="1">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstItem="2ST-GV-qyv" firstAttribute="top" secondItem="dPJ-4s-rQz" secondAttribute="top" constant="5" id="9Xw-hN-MfW"/>
-                                    <constraint firstItem="2ST-GV-qyv" firstAttribute="leading" secondItem="dPJ-4s-rQz" secondAttribute="leading" constant="5" id="FEx-WL-tBI"/>
-                                    <constraint firstAttribute="trailing" secondItem="2ST-GV-qyv" secondAttribute="trailing" constant="5" id="ULt-li-Abh"/>
-                                    <constraint firstAttribute="bottom" secondItem="2ST-GV-qyv" secondAttribute="bottom" constant="5" id="aXm-2R-JUs"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rU4-kk-gkH">
-                                <rect key="frame" x="187.66666666666666" y="497.00000000000006" width="93.666666666666657" height="93.666666666666686"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58z-GC-Gnv">
-                                        <rect key="frame" x="5" y="5" width="83.666666666666671" height="83.666666666666671"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="6">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstItem="58z-GC-Gnv" firstAttribute="top" secondItem="rU4-kk-gkH" secondAttribute="top" constant="5" id="3Lz-Jq-7uH"/>
-                                    <constraint firstAttribute="bottom" secondItem="58z-GC-Gnv" secondAttribute="bottom" constant="5" id="Cev-jM-Yy7"/>
-                                    <constraint firstItem="58z-GC-Gnv" firstAttribute="leading" secondItem="rU4-kk-gkH" secondAttribute="leading" constant="5" id="Mky-LH-oKQ"/>
-                                    <constraint firstAttribute="trailing" secondItem="58z-GC-Gnv" secondAttribute="trailing" constant="5" id="dZO-xL-TGU"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBd-nJ-yp1">
-                                <rect key="frame" x="281.33333333333331" y="497.00000000000006" width="93.666666666666686" height="93.666666666666686"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n66-oW-LFh">
-                                        <rect key="frame" x="5" y="5" width="83.666666666666671" height="83.666666666666671"/>
-                                        <color key="backgroundColor" name="Verde"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="-">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="n66-oW-LFh" secondAttribute="trailing" constant="5" id="DND-2b-TcC"/>
-                                    <constraint firstItem="n66-oW-LFh" firstAttribute="leading" secondItem="OBd-nJ-yp1" secondAttribute="leading" constant="5" id="Ffc-Ns-4bS"/>
-                                    <constraint firstAttribute="bottom" secondItem="n66-oW-LFh" secondAttribute="bottom" constant="5" id="S8r-UH-aw3"/>
-                                    <constraint firstItem="n66-oW-LFh" firstAttribute="top" secondItem="OBd-nJ-yp1" secondAttribute="top" constant="5" id="pPi-l4-Czm"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cuk-Lz-uAQ">
-                                <rect key="frame" x="93.666666666666657" y="497.00000000000006" width="93.666666666666657" height="93.666666666666686"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vub-Wu-f9N">
-                                        <rect key="frame" x="5" y="5" width="83.666666666666671" height="83.666666666666671"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="5">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstItem="Vub-Wu-f9N" firstAttribute="leading" secondItem="Cuk-Lz-uAQ" secondAttribute="leading" constant="5" id="3IR-0T-KhO"/>
-                                    <constraint firstItem="Vub-Wu-f9N" firstAttribute="top" secondItem="Cuk-Lz-uAQ" secondAttribute="top" constant="5" id="Btr-P9-rCU"/>
-                                    <constraint firstAttribute="bottom" secondItem="Vub-Wu-f9N" secondAttribute="bottom" constant="5" id="gvw-Sq-qcB"/>
-                                    <constraint firstAttribute="trailing" secondItem="Vub-Wu-f9N" secondAttribute="trailing" constant="5" id="hXZ-Na-7dd"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpg-Db-IEQ">
-                                <rect key="frame" x="0.0" y="497.00000000000006" width="93.666666666666671" height="93.666666666666686"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2H0-8X-EeW">
-                                        <rect key="frame" x="5" y="5" width="83.666666666666671" height="83.666666666666671"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="4">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstItem="2H0-8X-EeW" firstAttribute="leading" secondItem="gpg-Db-IEQ" secondAttribute="leading" constant="5" id="JZX-2Q-vGj"/>
-                                    <constraint firstItem="2H0-8X-EeW" firstAttribute="top" secondItem="gpg-Db-IEQ" secondAttribute="top" constant="5" id="RrF-MM-iYI"/>
-                                    <constraint firstAttribute="trailing" secondItem="2H0-8X-EeW" secondAttribute="trailing" constant="5" id="Tr1-In-Eg2"/>
-                                    <constraint firstAttribute="bottom" secondItem="2H0-8X-EeW" secondAttribute="bottom" constant="5" id="ZYr-Q6-Vqm"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uyu-Wg-pFb">
-                                <rect key="frame" x="187.66666666666666" y="403.33333333333331" width="93.666666666666657" height="93.666666666666686"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncc-xG-8WB">
-                                        <rect key="frame" x="5" y="5" width="83.666666666666671" height="83.666666666666671"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="9">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="ncc-xG-8WB" secondAttribute="bottom" constant="5" id="1BN-Lu-j2O"/>
-                                    <constraint firstItem="ncc-xG-8WB" firstAttribute="leading" secondItem="uyu-Wg-pFb" secondAttribute="leading" constant="5" id="1yM-xJ-xEg"/>
-                                    <constraint firstItem="ncc-xG-8WB" firstAttribute="top" secondItem="uyu-Wg-pFb" secondAttribute="top" constant="5" id="Gn6-gV-AaL"/>
-                                    <constraint firstAttribute="trailing" secondItem="ncc-xG-8WB" secondAttribute="trailing" constant="5" id="PYz-Fe-CyM"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDg-oA-4y6">
-                                <rect key="frame" x="281.33333333333331" y="403.33333333333331" width="93.666666666666686" height="93.666666666666686"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lue-HG-EO7">
-                                        <rect key="frame" x="5" y="5" width="83.666666666666671" height="83.666666666666671"/>
-                                        <color key="backgroundColor" name="Verde"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="X">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Lue-HG-EO7" secondAttribute="bottom" constant="5" id="2Us-g0-TtA"/>
-                                    <constraint firstAttribute="trailing" secondItem="Lue-HG-EO7" secondAttribute="trailing" constant="5" id="8Aj-Ya-Fd1"/>
-                                    <constraint firstItem="Lue-HG-EO7" firstAttribute="leading" secondItem="PDg-oA-4y6" secondAttribute="leading" constant="5" id="XMg-K1-8Pn"/>
-                                    <constraint firstItem="Lue-HG-EO7" firstAttribute="top" secondItem="PDg-oA-4y6" secondAttribute="top" constant="5" id="beF-wX-idL"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pA2-9b-WmW">
-                                <rect key="frame" x="93.666666666666657" y="403.33333333333331" width="93.666666666666657" height="93.666666666666686"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HF-zx-T5A">
-                                        <rect key="frame" x="5" y="5" width="83.666666666666671" height="83.666666666666671"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="8">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="7HF-zx-T5A" secondAttribute="trailing" constant="5" id="7oD-fK-BuS"/>
-                                    <constraint firstAttribute="bottom" secondItem="7HF-zx-T5A" secondAttribute="bottom" constant="5" id="I3T-d1-Zro"/>
-                                    <constraint firstItem="7HF-zx-T5A" firstAttribute="leading" secondItem="pA2-9b-WmW" secondAttribute="leading" constant="5" id="SL7-JS-Ll4"/>
-                                    <constraint firstItem="7HF-zx-T5A" firstAttribute="top" secondItem="pA2-9b-WmW" secondAttribute="top" constant="5" id="Zvp-8L-lWy"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fsU-Ld-2au">
-                                <rect key="frame" x="0.0" y="403.33333333333331" width="93.666666666666671" height="93.666666666666686"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGh-HJ-JkS">
-                                        <rect key="frame" x="5" y="5" width="83.666666666666671" height="83.666666666666671"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="7">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstItem="JGh-HJ-JkS" firstAttribute="leading" secondItem="fsU-Ld-2au" secondAttribute="leading" constant="5" id="YVJ-Ry-EGe"/>
-                                    <constraint firstAttribute="bottom" secondItem="JGh-HJ-JkS" secondAttribute="bottom" constant="5" id="bLg-e5-m6E"/>
-                                    <constraint firstItem="JGh-HJ-JkS" firstAttribute="top" secondItem="fsU-Ld-2au" secondAttribute="top" constant="5" id="dnB-dd-vqn"/>
-                                    <constraint firstAttribute="trailing" secondItem="JGh-HJ-JkS" secondAttribute="trailing" constant="5" id="vja-o5-o3w"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlK-wG-VQb">
-                                <rect key="frame" x="187.66666666666666" y="309.66666666666669" width="93.666666666666657" height="93.666666666666686"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ps4-ix-qMf">
-                                        <rect key="frame" x="5" y="5" width="83.666666666666671" height="83.666666666666671"/>
-                                        <color key="backgroundColor" name="Azul"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="%">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstItem="Ps4-ix-qMf" firstAttribute="top" secondItem="rlK-wG-VQb" secondAttribute="top" constant="5" id="D7y-D7-xXa"/>
-                                    <constraint firstAttribute="bottom" secondItem="Ps4-ix-qMf" secondAttribute="bottom" constant="5" id="N9E-fd-m5k"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ps4-ix-qMf" secondAttribute="trailing" constant="5" id="ShZ-Dm-dfK"/>
-                                    <constraint firstItem="Ps4-ix-qMf" firstAttribute="leading" secondItem="rlK-wG-VQb" secondAttribute="leading" constant="5" id="bAj-Ht-mqX"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRh-3M-WE6">
-                                <rect key="frame" x="281.33333333333331" y="309.66666666666669" width="93.666666666666686" height="93.666666666666686"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGi-9f-x5n">
-                                        <rect key="frame" x="5" y="5" width="83.666666666666671" height="83.666666666666671"/>
-                                        <color key="backgroundColor" name="Verde"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="/">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="tGi-9f-x5n" secondAttribute="trailing" constant="5" id="0le-kM-meH"/>
-                                    <constraint firstItem="tGi-9f-x5n" firstAttribute="top" secondItem="aRh-3M-WE6" secondAttribute="top" constant="5" id="5Sf-4A-ozW"/>
-                                    <constraint firstAttribute="bottom" secondItem="tGi-9f-x5n" secondAttribute="bottom" constant="5" id="NfC-Wl-jLG"/>
-                                    <constraint firstItem="tGi-9f-x5n" firstAttribute="leading" secondItem="aRh-3M-WE6" secondAttribute="leading" constant="5" id="Put-OF-itN"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVu-hX-yDB">
-                                <rect key="frame" x="0.0" y="309.66666666666669" width="93.666666666666671" height="93.666666666666686"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwK-Ae-LeL">
-                                        <rect key="frame" x="5" y="5" width="83.666666666666671" height="83.666666666666671"/>
-                                        <color key="backgroundColor" name="Azul"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="C">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstItem="XwK-Ae-LeL" firstAttribute="leading" secondItem="kVu-hX-yDB" secondAttribute="leading" constant="5" id="B8G-H0-gzm"/>
-                                    <constraint firstAttribute="trailing" secondItem="XwK-Ae-LeL" secondAttribute="trailing" constant="5" id="NhQ-3f-Ndc"/>
-                                    <constraint firstAttribute="bottom" secondItem="XwK-Ae-LeL" secondAttribute="bottom" constant="5" id="eOs-k6-5RW"/>
-                                    <constraint firstItem="XwK-Ae-LeL" firstAttribute="top" secondItem="kVu-hX-yDB" secondAttribute="top" constant="5" id="skz-Ts-WAm"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzB-Ud-tK6">
-                                <rect key="frame" x="93.666666666666657" y="309.66666666666669" width="93.666666666666657" height="93.666666666666686"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUv-gg-aLj">
-                                        <rect key="frame" x="5" y="5" width="83.666666666666671" height="83.666666666666671"/>
-                                        <color key="backgroundColor" name="Azul"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="/">
-                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
-                                            <color key="baseForegroundColor" name="white"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="48"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
-                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                                <size key="value" width="0.0" height="2"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                                <real key="value" value="0.5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" name="white"/>
-                                <constraints>
-                                    <constraint firstItem="XUv-gg-aLj" firstAttribute="leading" secondItem="mzB-Ud-tK6" secondAttribute="leading" constant="5" id="CTE-du-NAc"/>
-                                    <constraint firstAttribute="trailing" secondItem="XUv-gg-aLj" secondAttribute="trailing" constant="5" id="aZT-he-GGE"/>
-                                    <constraint firstItem="XUv-gg-aLj" firstAttribute="top" secondItem="mzB-Ud-tK6" secondAttribute="top" constant="5" id="bB4-6k-7iD"/>
-                                    <constraint firstAttribute="bottom" secondItem="XUv-gg-aLj" secondAttribute="bottom" constant="5" id="o2d-yG-eG1"/>
-                                </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="white"/>
+                        <viewLayoutGuide key="safeArea" id="8e3-r8-gDy"/>
+                        <color key="backgroundColor" name="Verde"/>
                         <constraints>
-                            <constraint firstItem="kVu-hX-yDB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0IQ-rt-0Km"/>
-                            <constraint firstItem="rU4-kk-gkH" firstAttribute="width" secondItem="rU4-kk-gkH" secondAttribute="height" multiplier="1:1" id="0uG-nO-gaF"/>
-                            <constraint firstItem="Cuk-Lz-uAQ" firstAttribute="top" secondItem="pA2-9b-WmW" secondAttribute="bottom" id="152-xh-cRW"/>
-                            <constraint firstItem="PDg-oA-4y6" firstAttribute="width" secondItem="PDg-oA-4y6" secondAttribute="height" multiplier="1:1" id="15U-Gn-FOh"/>
-                            <constraint firstItem="mzB-Ud-tK6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.249778" id="1ts-2S-TEE"/>
-                            <constraint firstAttribute="trailing" secondItem="OBd-nJ-yp1" secondAttribute="trailing" id="2PK-e8-UEZ"/>
-                            <constraint firstItem="fsU-Ld-2au" firstAttribute="top" secondItem="kVu-hX-yDB" secondAttribute="bottom" id="2Rt-Oj-sLT"/>
-                            <constraint firstItem="PDg-oA-4y6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.115353" id="3c2-vi-wuy"/>
-                            <constraint firstItem="mzB-Ud-tK6" firstAttribute="leading" secondItem="kVu-hX-yDB" secondAttribute="trailing" id="4VQ-6b-vrk"/>
-                            <constraint firstItem="Z8m-Ra-GBC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.500444" id="5OE-2A-VVk"/>
-                            <constraint firstItem="rU4-kk-gkH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.249778" id="5gE-U9-K7f"/>
-                            <constraint firstAttribute="trailing" secondItem="7MG-Ix-FIt" secondAttribute="trailing" id="62t-qK-Uga"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7MG-Ix-FIt" secondAttribute="bottom" id="6Tt-9z-q80"/>
-                            <constraint firstItem="pA2-9b-WmW" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.115353" id="7FJ-Zj-Whx"/>
-                            <constraint firstItem="rlK-wG-VQb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.115353" id="7zw-v5-m8Z"/>
-                            <constraint firstItem="uyu-Wg-pFb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.249778" id="8f0-5e-CIV"/>
-                            <constraint firstItem="gpg-Db-IEQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.249778" id="91k-Ap-uC6"/>
-                            <constraint firstItem="aRh-3M-WE6" firstAttribute="width" secondItem="aRh-3M-WE6" secondAttribute="height" multiplier="1:1" id="9fk-zD-sV1"/>
-                            <constraint firstItem="i2a-Xd-ZPu" firstAttribute="top" secondItem="OBd-nJ-yp1" secondAttribute="bottom" id="ALz-fu-t2V"/>
-                            <constraint firstItem="OBd-nJ-yp1" firstAttribute="leading" secondItem="rU4-kk-gkH" secondAttribute="trailing" id="CP6-47-qWz"/>
-                            <constraint firstItem="rU4-kk-gkH" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.115353" id="D8O-Oa-cak"/>
-                            <constraint firstItem="dPJ-4s-rQz" firstAttribute="top" secondItem="gpg-Db-IEQ" secondAttribute="bottom" id="DN1-5N-Fa2"/>
-                            <constraint firstItem="Cuk-Lz-uAQ" firstAttribute="leading" secondItem="gpg-Db-IEQ" secondAttribute="trailing" id="G75-mC-CXv"/>
-                            <constraint firstItem="PDg-oA-4y6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.249778" id="GNa-q0-wmE"/>
-                            <constraint firstItem="mzB-Ud-tK6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.115353" id="H6q-Kb-eVo"/>
-                            <constraint firstItem="Cuk-Lz-uAQ" firstAttribute="width" secondItem="Cuk-Lz-uAQ" secondAttribute="height" multiplier="1:1" id="HPE-u3-cfX"/>
-                            <constraint firstItem="rU4-kk-gkH" firstAttribute="top" secondItem="uyu-Wg-pFb" secondAttribute="bottom" id="ICb-JY-uhD"/>
-                            <constraint firstItem="PDg-oA-4y6" firstAttribute="top" secondItem="aRh-3M-WE6" secondAttribute="bottom" id="IUH-Bc-d4T"/>
-                            <constraint firstItem="nAh-mM-X5Z" firstAttribute="leading" secondItem="dPJ-4s-rQz" secondAttribute="trailing" id="IeW-VO-NoB"/>
-                            <constraint firstItem="dPJ-4s-rQz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IzR-2W-7I2"/>
-                            <constraint firstItem="uyu-Wg-pFb" firstAttribute="width" secondItem="uyu-Wg-pFb" secondAttribute="height" multiplier="1:1" id="Jes-GL-GdY"/>
-                            <constraint firstItem="nAh-mM-X5Z" firstAttribute="top" secondItem="Cuk-Lz-uAQ" secondAttribute="bottom" id="JuV-47-QGi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tey-md-CHP" secondAttribute="bottom" id="KQ7-us-wzf"/>
-                            <constraint firstItem="mzB-Ud-tK6" firstAttribute="width" secondItem="mzB-Ud-tK6" secondAttribute="height" multiplier="1:1" id="LPm-3z-bOe"/>
-                            <constraint firstItem="or0-y4-98F" firstAttribute="width" secondItem="or0-y4-98F" secondAttribute="height" multiplier="1:1" id="MAM-GZ-O9y"/>
-                            <constraint firstItem="OBd-nJ-yp1" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.249778" id="OPI-Et-i2U"/>
-                            <constraint firstItem="OBd-nJ-yp1" firstAttribute="top" secondItem="PDg-oA-4y6" secondAttribute="bottom" id="Op7-Eg-UMF"/>
-                            <constraint firstItem="fsU-Ld-2au" firstAttribute="width" secondItem="fsU-Ld-2au" secondAttribute="height" multiplier="1:1" id="Ot8-6r-oKv"/>
-                            <constraint firstItem="dPJ-4s-rQz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.249778" id="PE5-cL-xnS"/>
-                            <constraint firstItem="7MG-Ix-FIt" firstAttribute="leading" secondItem="Tey-md-CHP" secondAttribute="trailing" id="PaE-Vf-IMf"/>
-                            <constraint firstItem="OBd-nJ-yp1" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.115353" id="QP8-HP-1bK"/>
-                            <constraint firstItem="OBd-nJ-yp1" firstAttribute="width" secondItem="OBd-nJ-yp1" secondAttribute="height" multiplier="1:1" id="RGp-SJ-4CB"/>
-                            <constraint firstItem="fsU-Ld-2au" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.115353" id="SBb-dM-H2z"/>
-                            <constraint firstItem="gpg-Db-IEQ" firstAttribute="width" secondItem="gpg-Db-IEQ" secondAttribute="height" multiplier="1:1" id="TNI-do-UQP"/>
-                            <constraint firstItem="nAh-mM-X5Z" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.115353" id="TTj-f2-XfL"/>
-                            <constraint firstItem="Z8m-Ra-GBC" firstAttribute="height" secondItem="jhq-bW-cIC" secondAttribute="height" multiplier="1.11952" id="Tth-gr-Mkt"/>
-                            <constraint firstItem="nAh-mM-X5Z" firstAttribute="width" secondItem="nAh-mM-X5Z" secondAttribute="height" multiplier="1:1" id="UZs-jf-8bu"/>
-                            <constraint firstItem="nAh-mM-X5Z" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.249778" id="Uhv-1g-BCd"/>
-                            <constraint firstItem="rlK-wG-VQb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.249778" id="VAb-r0-aLi"/>
-                            <constraint firstItem="pA2-9b-WmW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.249778" id="VEK-8v-Ql6"/>
-                            <constraint firstItem="uyu-Wg-pFb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.115353" id="Vzx-ni-8Ia"/>
-                            <constraint firstItem="Z8m-Ra-GBC" firstAttribute="top" secondItem="dPJ-4s-rQz" secondAttribute="bottom" id="WC1-sM-d1h"/>
-                            <constraint firstItem="rlK-wG-VQb" firstAttribute="width" secondItem="rlK-wG-VQb" secondAttribute="height" multiplier="1:1" id="WpL-kv-sp0"/>
-                            <constraint firstItem="kVu-hX-yDB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.115353" id="XO1-AE-yu2"/>
-                            <constraint firstItem="i2a-Xd-ZPu" firstAttribute="width" secondItem="i2a-Xd-ZPu" secondAttribute="height" multiplier="1:1" id="XXU-QH-HLf"/>
-                            <constraint firstItem="PDg-oA-4y6" firstAttribute="leading" secondItem="uyu-Wg-pFb" secondAttribute="trailing" id="ZZ4-aS-ftD"/>
-                            <constraint firstItem="7MG-Ix-FIt" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.115353" id="bCl-WI-XeM"/>
-                            <constraint firstItem="Tey-md-CHP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.249778" id="bmV-vC-CvQ"/>
-                            <constraint firstItem="Tey-md-CHP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.115353" id="c28-sK-LyQ"/>
-                            <constraint firstItem="7MG-Ix-FIt" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.249778" id="c2o-WX-ASh"/>
-                            <constraint firstItem="gpg-Db-IEQ" firstAttribute="top" secondItem="fsU-Ld-2au" secondAttribute="bottom" id="cH2-eO-0gM"/>
-                            <constraint firstItem="uyu-Wg-pFb" firstAttribute="top" secondItem="rlK-wG-VQb" secondAttribute="bottom" id="dgf-kB-GSx"/>
-                            <constraint firstItem="i2a-Xd-ZPu" firstAttribute="leading" secondItem="or0-y4-98F" secondAttribute="trailing" id="g4V-08-tZ5"/>
-                            <constraint firstAttribute="trailing" secondItem="PDg-oA-4y6" secondAttribute="trailing" id="g8O-cK-tNN"/>
-                            <constraint firstItem="dPJ-4s-rQz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.115353" id="hPl-a8-J2Y"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aRh-3M-WE6" secondAttribute="trailing" id="hvN-Do-3bB"/>
-                            <constraint firstItem="Z8m-Ra-GBC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jAt-9O-qUA"/>
-                            <constraint firstItem="gpg-Db-IEQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jz3-i1-ylx"/>
-                            <constraint firstItem="aRh-3M-WE6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.115353" id="lYx-Nu-8Ue"/>
-                            <constraint firstItem="kVu-hX-yDB" firstAttribute="width" secondItem="kVu-hX-yDB" secondAttribute="height" multiplier="1:1" id="lcq-v2-TIL"/>
-                            <constraint firstItem="kVu-hX-yDB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.249778" id="lmJ-eX-xuB"/>
-                            <constraint firstItem="Tey-md-CHP" firstAttribute="top" secondItem="or0-y4-98F" secondAttribute="bottom" id="mQH-LW-7ud"/>
-                            <constraint firstItem="uyu-Wg-pFb" firstAttribute="top" secondItem="mzB-Ud-tK6" secondAttribute="bottom" id="mXn-vP-NdU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z8m-Ra-GBC" secondAttribute="bottom" id="nyJ-4X-08A"/>
-                            <constraint firstItem="aRh-3M-WE6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.249778" id="obl-T1-dmf"/>
-                            <constraint firstItem="dPJ-4s-rQz" firstAttribute="width" secondItem="dPJ-4s-rQz" secondAttribute="height" multiplier="1:1" id="otu-eV-zTg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i2a-Xd-ZPu" secondAttribute="trailing" id="qEE-gj-fwE"/>
-                            <constraint firstItem="gpg-Db-IEQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.115353" id="qdf-jf-kzt"/>
-                            <constraint firstItem="or0-y4-98F" firstAttribute="top" secondItem="rU4-kk-gkH" secondAttribute="bottom" id="qfr-6n-z6y"/>
-                            <constraint firstItem="Z8m-Ra-GBC" firstAttribute="top" secondItem="nAh-mM-X5Z" secondAttribute="bottom" id="rFy-s0-0nC"/>
-                            <constraint firstItem="or0-y4-98F" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.249778" id="soL-Sa-ddy"/>
-                            <constraint firstItem="i2a-Xd-ZPu" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.115353" id="tHp-Tr-d9g"/>
-                            <constraint firstItem="Cuk-Lz-uAQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.115353" id="udK-2x-IbD"/>
-                            <constraint firstItem="fsU-Ld-2au" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.249778" id="v51-zm-1Fj"/>
-                            <constraint firstItem="pA2-9b-WmW" firstAttribute="width" secondItem="pA2-9b-WmW" secondAttribute="height" multiplier="1:1" id="vmY-KB-Z4F"/>
-                            <constraint firstItem="Cuk-Lz-uAQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.249778" id="woL-vf-GdY"/>
-                            <constraint firstItem="pA2-9b-WmW" firstAttribute="leading" secondItem="fsU-Ld-2au" secondAttribute="trailing" id="yvb-ja-NFk"/>
-                            <constraint firstItem="fsU-Ld-2au" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="z8d-if-C1J"/>
-                            <constraint firstItem="i2a-Xd-ZPu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.249778" id="zAV-gv-YIT"/>
-                            <constraint firstItem="7MG-Ix-FIt" firstAttribute="top" secondItem="i2a-Xd-ZPu" secondAttribute="bottom" id="zTW-Gz-plc"/>
-                            <constraint firstItem="aRh-3M-WE6" firstAttribute="leading" secondItem="rlK-wG-VQb" secondAttribute="trailing" id="zov-dk-b3B"/>
+                            <constraint firstItem="5ch-7T-2di" firstAttribute="top" secondItem="QD9-DH-HNC" secondAttribute="bottom" id="GQP-XR-Ru2"/>
+                            <constraint firstItem="8e3-r8-gDy" firstAttribute="bottom" secondItem="5ch-7T-2di" secondAttribute="bottom" constant="10" id="K54-To-Ece"/>
+                            <constraint firstItem="QD9-DH-HNC" firstAttribute="leading" secondItem="8e3-r8-gDy" secondAttribute="leading" id="T6j-CR-wkk"/>
+                            <constraint firstItem="8e3-r8-gDy" firstAttribute="trailing" secondItem="5ch-7T-2di" secondAttribute="trailing" constant="10" id="Wm4-e9-SV6"/>
+                            <constraint firstItem="5ch-7T-2di" firstAttribute="leading" secondItem="8e3-r8-gDy" secondAttribute="leading" constant="10" id="ZHT-VP-0gW"/>
+                            <constraint firstItem="QD9-DH-HNC" firstAttribute="height" secondItem="yH5-cD-SVB" secondAttribute="height" multiplier="0.307882" id="ceA-n0-004"/>
+                            <constraint firstItem="QD9-DH-HNC" firstAttribute="top" secondItem="8e3-r8-gDy" secondAttribute="top" id="wXf-HW-7If"/>
+                            <constraint firstItem="8e3-r8-gDy" firstAttribute="trailing" secondItem="QD9-DH-HNC" secondAttribute="trailing" id="xK7-wg-GfK"/>
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rUA-qT-YJU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.40000000000001" y="93.842364532019715"/>
+            <point key="canvasLocation" x="978" y="94"/>
         </scene>
     </scenes>
     <resources>
@@ -759,8 +620,5 @@
         <namedColor name="white">
             <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>
